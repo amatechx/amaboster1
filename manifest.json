@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "images/webchecker128.png",
+         "16": "images/webchecker16.png",
+         "32": "images/webchecker32.png",
+         "48": "images/webchecker48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "AMATECHX YOUTUBE TOOLS"
+   },
+   "background": {
+      "service_worker": "scripts/background.js"
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'",
+      "sandbox": "sandbox allow-scripts; script-src 'self' 'https://apis.google.com/' 'https://www.gstatic.com/' 'https://*.firebaseio.com' 'https://www.googleapis.com' 'https://ajax.googleapis.com'; object-src 'self'"
+   },
+   "description": "silahkan pakai sesuka hati mu jangan lupa like comment subrek AMATECHX3",
+   "host_permissions": [ "*://*.youtube.com/", "*://*.irank.kr/" ],
+   "icons": {
+      "128": "images/webchecker128.png",
+      "16": "images/webchecker16.png",
+      "32": "images/webchecker32.png",
+      "48": "images/webchecker48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArqtVIFa3TinELzMWhBWucqcw+9hJH330W10YRI6oYDudtHSpXBQtn8PX/s92gBG08lyKq0wscvExtORKiKmgXYZvt0E/p4rzP3rc4racwW58968wbBdTTz7A2YW1NzdfpleUfAduWjssp1DOifKt86/lYhiBkV0NOaXjvToD4bOGQz91b5Nj2k30hXu7SvKA0qXFLYUk95B44JUWyuWYt7wDu2qPvaBLeR7OA/ZChMPRK/eti9ubStSKI2nz5koEofVqauwt+lqRB2O57YMRDUaKy9K+uUfV6W8O0c/ysarzg3gd/UkESu4dRnaXDPYnbSG+18f68rgN5NBPe1/E3wIDAQAB",
+   "manifest_version": 3,
+   "name": "AMATECHX YOUTUBE TOOLS",
+   "permissions": [ "storage", "tabs", "activeTab", "webNavigation", "scripting", "alarms" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx1",
+   "version": "0.14",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "/scripts/*.js" ]
+   } ]
+}

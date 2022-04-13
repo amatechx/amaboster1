@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>amatechx booster - YouTube</title>
+	<link rel="stylesheet" href="scripts/themes-base-jquery-ui.css">
+	<link rel="stylesheet" href="scripts/jquery-ui.css">
+    <style>
+    html {   overflow-x: hidden;}
+a {text-decoration:none;color:#000;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {     display:block;}
+table {    border-collapse: separate;    border-spacing: 0;}
+caption, th, td {    text-align: left;    font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {    content: "";}
+.quickedit, .home-link{display:none;}
+blockquote, q {    quotes: "" "";}
+sup{    vertical-align: super;    font-size:smaller;}
+code{    font-family: 'Courier New', Courier, monospace;    font-size:12px;    color:#272727;}
+::selection {background:transparent; text-shadow:#000 0 0 2px;}
+::-moz-selection {background:transparent; text-shadow:#000 0 0 2px;}
+::-webkit-selection {background:transparent; text-shadow:#000 0 0 2px;}
+::-o-selection {background:transparent; text-shadow:#000 0 0 2px;}
+a img{	border: none;}
+ol, ul { padding:0;  margin:0;  text-align: left;  }
+ol li { list-style-type: decimal;  padding:0 0 5px;  }
+ul li { list-style-type: disc;  padding: 0 0 5px;  }
+ul ul, ol ol { padding: 0; }
+h2.date-header, h4.date-header {display:none;margin:1.5em 0 .5em}
+a,h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
+font-weight: 400;
+color: #151515;
+}
+.typed-cursor {
+font-weight: 300;
+font-size: 50px;
+color: #ffbd2f;
+opacity: 1;
+-webkit-animation: blink 1s infinite;
+-moz-animation: blink 1s infinite;
+animation: blink 1s infinite;
+}
+.typed-cursor {
+position: absolute;
+bottom: 0;
+display: inline-block;
+}
+
+        body { width:417px; height:400px; background: #323232;color:#FFF;}
+		#realbooster { width: 400px; height:600px; }
+		table, th { border: 0px solid #bcbcbc; padding: 0px; border-right: 0px solid #FF0000; border-right: 0px solid #FF0000; }
+		td { border: 0px solid #bcbcbc; padding: 0px; border-right: 0px solid #FF0000; }
+		#wc_title {	background-image:url('images/logo.png'); background-repeat:no-repeat; background-position: left; margin-top: 5px; }
+		.border01 { position: relative; padding-bottom: 4px; margin-top: 4px; margin-bottom: 4px; background: url('images/img_bg_line.png') repeat-x 100% 100%; }
+		.b_title { display: inline-block; border:1px solid #ff0000; width:75px; padding: 4px 5px; background: #00BFF3; color:#FFF; }
+		.b_title2 { display: inline-block; border:1px solid #ff0000; width:75px; padding: 4px 5px; background: #ff0000; color:#FFF; }
+		.b_title3 { display: inline-block; border:1px solid black; width:75px; padding: 4px 5px; background: #ff6c00; }
+		.b_content { display: inline-block; border:1px solid black; width:310px; margin: 0px; padding: 4px 5px; }
+		.b_content1 { display: block; border:1px solid black; width:312px; height: 16px; padding: 4px; text-align:left; }
+		.b_content2 { display: block; border:1px solid black; width:312px; height: 16px; padding: 4px; text-align:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+		.b_content3 { display: inline-block; border:1px solid black; width:312px; height: 16px; padding: 4px; text-align:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+		.h3 { height: 3px; }
+		.h5 { height: 5px; }
+		.h19 { height: 3px; }
+		.h29 { height: 3px; }
+		.h13 { height: 3px; }
+		.h26 { height: 5px; }
+		.h262 { height: 8px; }
+		.h263 { height: 8px; }
+		.myscore_title { display: inline-block; border-top:1px solid black; border-left:1px solid black; border-bottom:1px solid black; border-right:0px solid black; width:26px; padding: 4px 0px; text-align: center; background: #18ff00; }
+		.sharescore_title { display: inline-block; border-top:1px solid black; border-left:1px solid black; border-bottom:1px solid black; border-right:0px solid black; width:26px; padding: 4px 0px; text-align: center; background: #00BFF3; color: #FFF; }
+		.display_value { display: inline-block; border:1px solid black; width:49px; padding: 4px 0px; text-align: center; }
+    </style>
+	<style>
+		/*label, input { display:block; }*/
+		#dialog-tbl { width: 358px; height:200px; border: 0px solid #FF0000; }
+		input.text { margin-bottom:12px; width:95%; padding: .4em; }
+		fieldset { padding:0; border:0; margin-top:0px; }
+		/*label { display: block; margin: 7px 0 0 0; }*/
+		.overflow { height: 600px; width: 358px;}
+		h1 { font-size: 1.2em; margin: .6em 0; }
+		div#users-contain { width: 350px; margin: 20px 0; }
+		div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+		div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+		.ui-dialog .ui-state-error { padding: .3em; }
+	</style>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/jquery-ui.js"></script>
+    <script src="scripts/popup.js"></script>
+</head>
+<body>
+
+	<div id="dialog-form" title="amatechx Booster- Setting" >
+		<form >
+			<fieldset>
+
+				<table id="dialog-tbl">
+					<colgroup>
+						<col width="">
+						<col width="">
+						<col width="">
+						<col width="">
+						<col width="">
+						<col width="">
+					</colgroup>
+					<tbody>
+			
+
+					<tr class="h26">
+<h1><span><a href="https://www.youtube.com/channel/UCnJzMy22b5ghEnRuvcAYUhw/about?sub_confirmation=1#fstsub" target="_blank">👉 KLICK DISINI UNTUK LEBIH LANJUT</a></span></h1>
+
+
+						<td colspan="6">
+							<label for="watchlimit" style="float:left;"><input type="checkbox" name="watchlimit" id="watchlimit" style="float:left;">Limit bot views</label>
+						</td>
+					</tr>
+
+					<tr class="h13"><td colspan="6" class="h13"><div class="border01"></div></td></tr>
+
+					<tr class="h26">
+						<td colspan="6">
+							<div style="display: inline-block; border:1px solid #ff0000; width:55px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Time limit</div>
+
+							<select name="waktoslimit" id="timelimit">
+								<option>3 Minutes</option>
+								<option>5 Minutes</option>
+								<option>6 Minutes</option>
+								<option>10 Minutes</option>
+								<option>20 Minutes</option>
+								<option>40 Minutes</option>
+								<option>60 Minutes</option>
+								<option>90 Minutes</option>
+								<option selected="selected">Unlimited</option>
+							</select>
+
+							<div style="display: inline-block; border:1px solid #ff0000; width:60px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Reset time</div>
+
+							<select name="resettime" id="resettime">
+								<option>6 Hours</option>
+								<option>12 Hours</option>
+								<option selected="selected">24 Hours</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="h13"><td colspan="6" class="h13"><div class="border01"></div></td></tr>
+
+					<tr>
+
+						<td colspan="4"><div style="display: inline-block; border:1px solid #ff0000; width:95px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Search word</div></td>
+						<td colspan="4"><input type="text" placeholder="Search word" id="q1" style="display: inline-block; border:1px solid black; width:229px; height: 16px; padding: 4px 5px; "></td>
+						<td colspan="4"></td>
+					</tr>
+
+					<tr class="h5"><td colspan="6" class="h5"></td></tr>
+
+					<tr class="h26">
+						<td colspan="4"><div style="display: inline-block; border:1px solid #ff0000; width:95px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Channel</div></td>
+						<td colspan="4"><input type="text" placeholder="Youtube channel URL" id="t1" style="display: inline-block; border:1px solid black; width:229px; height: 16px; padding: 4px 5px; "></td>
+					</tr>
+					<td colspan="4"></td>
+					<tr>
+						<td colspan="4"><div style="display: inline-block; border:1px solid #ff0000; width:95px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Search word</div></td>
+						<td colspan="4"><input type="text" placeholder="Search word" id="q1" style="display: inline-block; border:1px solid black; width:229px; height: 16px; padding: 4px 5px; "></td>
+						<td colspan="4"></td>
+					</tr>
+
+					<tr class="h5"><td colspan="6" class="h5"></td></tr>
+
+					<tr class="h262">
+						<td colspan="4"><div style="display: inline-block; border:1px solid #ff0000; width:95px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Channel</div></td>
+						<td colspan="4"><input type="text" placeholder="Youtube channel URL" id="t1" style="display: inline-block; border:1px solid black; width:229px; height: 16px; padding: 4px 5px; "></td>
+					</tr>
+					<tr>
+						<td colspan="4"><div style="display: inline-block; border:1px solid #ff0000; width:95px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Search word</div></td>
+						<td colspan="4"><input type="text" placeholder="Search word" id="q1" style="display: inline-block; border:1px solid black; width:229px; height: 16px; padding: 4px 5px; "></td>
+						<td colspan="4"></td>
+					</tr>
+
+					<tr class="h5"><td colspan="6" class="h5"></td></tr>
+
+					<tr class="h263">
+						<td colspan="4"><div style="display: inline-block; border:1px solid #ff0000; width:95px; height: 16px; padding: 5px 5px 3px 5px; background: #00BFF3; color:#FFF;">Channel</div></td>
+						<td colspan="4"><input type="text" placeholder="Youtube channel URL" id="t1" style="display: inline-block; border:1px solid black; width:229px; height: 16px; padding: 4px 5px; "></td>
+					</tr>
+
+				</table>
+			</fieldset>
+
+			<!-- Allow form submission with keyboard without duplicating the dialog button -->
+			<input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+		</form>
+	</div>
+
+    <input type="hidden" id="cs" value="0">
+	<table id="realbooster">
+		<colgroup>
+			<col width="88">
+			<col width="50">
+			<col width="72">
+			<col width="62">
+			<col width="38">
+			<col width="92">
+		</colgroup>
+		<tbody>
+		<tr class="h19">
+			<td colspan="6">
+				<div id="wc_title" style="display: inline-block; border:0px solid black; width:320px; padding: 0px 5px 0px 25px; letter-spacing: .01785714em; font-family: 'Google Sans',Roboto,Arial,sans-serif, var(--devsite-font-family,var(--devsite-primary-font-family)); font-size: .875rem; font-weight: 600;">amatechx Boster - YouTube</div><img src="images/setting.png" style="float:right;" id="setting">
+			</td>
+		</tr>
+		<tr class="h13">
+			<td colspan="6" class="h13"><div class="border01"></div></td>
+		</tr>
+
+		<tr class="h26">
+			<td><div class="b_title2">Elapsed time</div></td>
+			<td colspan="4"><div id="s" style="display: inline-block; border:1px solid black; width:112px; padding: 4px; text-align:center; ">00:00:00</div></td>
+			<td colspan="3"><input type="button" value="START" id="start" style="display: inline-block; border:1px solid black; width:196px; height:26px; padding: 3px; margin:0px 1px 0px 0px; cursor:pointer; "></td>
+		</tr>
+
+		<tr class="h13"><td colspan="6" class="h13"><div class="border01"></div></td></tr>
+
+		<tr class="h26">
+			<td><div class="b_title2">Search word</div></td>
+			<td colspan="5"><div id="q" class="b_content1"></div></td>
+		</tr>
+		<tr class="h26">
+			<td><div class="b_title2">Channel</div></td>
+			<td colspan="5"><div id="t" class="b_content1"></div></td>
+	
+
+		<tr class="h13"><td colspan="6" class="h13"><div class="border01"></div></td></tr>
+
+		<tr class="h26">
+			<td style=" padding: 0; vertical-align: top; "><div class="b_title3">URL</div></td>
+			<td colspan="5"><div id="yturl" class="b_content2">http://...</div></td>
+		</tr>
+
+		<tr class="h3"><td colspan="6" class="h3"></td></tr>
+
+		<tr class="h26">
+			<td><div class="b_title3">Status</div></td>
+			<td colspan="5"><div id="ytstatus" class="b_content1">Waiting for...</div></td>
+		</tr>
+
+		<tr class="h13"><td colspan="6" class="h13"><div class="border01"></div></td></tr>
+
+		<tr class="h26">
+			<td><div class="b_title3">My Score</div></td>
+
+			<td colspan="5">
+				<div class="myscore_title" title="Subscribe Count">S</div><div id="msr" class="display_value">-</div>
+
+				<div class="myscore_title" title="Like Count">L</div><div id="mlr" class="display_value">-</div>
+
+				<div class="myscore_title" title="Video Count">V</div><div id="mvr" class="display_value">-</div>
+
+				<div class="myscore_title" title="Watch Time(seconds)">T</div><div id="mtr" class="display_value">-</div>
+			</td>
+		</tr>
+
+		<tr class="h3">
+			<td colspan="6" class="h3">
+				<div id="ytlogin" style="display: none; border:1px solid black; width:60px; padding: 4px; "> Waiting for</div>
+				<div id="ytsubscribe" style="display: none; border:1px solid black; width:60px; padding: 4px; "> Waiting for</div>
+				<div id="ytlike" style="display: none; border:1px solid black; width:60px; padding: 4px; margin:0px 1px 0px 0px; "> Waiting for</div>
+			</td>
+		</tr>
+
+		<tr class="h26">
+			<td><div class="b_title2">Share Score</div></td>
+
+			<td colspan="5">
+				<div class="sharescore_title" title="Subscribe Count">S</div><div id="ssr" class="display_value">-</div>
+
+				<div class="sharescore_title" title="Like Count">L</div><div id="slr" class="display_value">-</div>
+
+				<div class="sharescore_title" title="Video Count">V</div><div id="svr" class="display_value">-</div>
+
+				<div class="sharescore_title" title="Watch Time(seconds)">T</div><div id="str" class="display_value">-</div>
+			</td>
+
+			<div id="s1" style="display: none; border:1px solid black; width:112px; padding: 4px; text-align:center; ">00:00:00</div>
+			<div style="display: none; border:1px solid #ff0000; width:89px; padding: 4px 5px; background: #00BFF3; color:#FFF;">Watched</div>
+			<div id="p" style="display: none; border:1px solid black; width:82px; padding: 4px; text-align:center; ">.</div>
+		</tr>
+		</tbody>
+	</table>
+
+
+
+
+</body>
+</html>
